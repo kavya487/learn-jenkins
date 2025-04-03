@@ -23,6 +23,7 @@ pipeline {
     post {
         always {
             echo "this project aways runs"
+            deleteDir()
         }
         success {
             echo "this section run when pipeline success"
