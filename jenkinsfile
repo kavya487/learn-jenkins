@@ -20,7 +20,7 @@ pipeline {
 
         password(name: 'PASSWORD', defaultValue: 'SECRET', description: 'Enter a password')
     }
-    }
+    
     
     stages {
         stage('Build') {
@@ -67,3 +67,4 @@ pipeline {
             echo "this section run when pipeline fails"
         }    
     }
+}
