@@ -14,4 +14,17 @@ pipeline {
         }
         
     }
-  }
+
+    post {
+        always {
+            echo "this project aways runs"
+        }
+        success {
+            echo "this section run when pipeline success"
+        }
+        failure {
+            echo "this section run when pipeline fails"
+        }    
+    }
+
+}
